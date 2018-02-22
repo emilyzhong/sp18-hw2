@@ -1,0 +1,48 @@
+<style type="text/css">
+	#outer {
+		width: 300px;
+		font-family: Helvetica;
+		line-height: 1.4em;
+		padding: 50px;
+		background: white;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		transition: 0.2s;
+		box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+	}
+
+	html {
+		height: 100vh;
+		width: 100vw;
+		background: #f2f2f2;
+		position: relative;
+	}
+
+	.tape {
+		height: 25px;
+		width: 70px;
+		background: lightblue;
+		opacity: 0.2;
+		position: absolute;
+	}
+
+	#tape1 {
+		right: -15px;
+		top: -2px;
+		transform: rotate(35deg);
+	}
+
+	#tape2 {
+		left: -15px;
+		top: 0px;
+		transform: rotate(-40deg);
+	}
+
+</style>
+<div id="outer">
+	<div id="tape1" class="tape"></div>
+	<div id="tape2" class="tape"></div>
+	<%= @stuff %>
+</div>
